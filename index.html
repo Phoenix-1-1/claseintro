@@ -1,67 +1,82 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Mi primera web</title>
-  <style>
-    body {
-      font-family: Algerian;
-      background-color: white;
-      text-align: center;
-    }
-    .contenedor {
-      background:red;
-      padding: 20px;
-      margin: 50px auto;
-      width: 300px;
-      border-radius: 10px;
-    }
-      img {
-        width:120px;
-        border-radius:50%;
-      }
-      </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Página Personal</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div>
-      <!--Navbar-->
-      <nav class="navbar fixed-top navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">My web page</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#acad">Academic information</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#bio">Biographic information</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#coni">Contact info</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#conf">Contact form</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    
-<div class="contenedor">
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ03bed7qdz5DsNU4AXFzbiPFGplJE7mO4pww&s" alt="foto">
-  <h1>Tu Nombre</h1>
-  <p>Soy estudiante y estoy aprendiendo programación.</p>
-  
-  <h3>Contacto</h3>
-  <p>Email: tucorreo@gmail.com</p>
-</div>
 
-  
-  </style>
-</head>
-<body>
-  <h1>Hola mundo 🌎</h1>
-  <p>Mi página en GitHub Pages</p>
+  <header class="hero">
+    <h1>Hola, soy Tu Nombre</h1>
+    <p>Bienvenido a mi página personal</p>
+  </header>
+
+  <section class="sobre-mi">
+    <h2>Sobre mí</h2>
+    <p>Soy estudiante y me interesa la tecnología, programación y diseño web.</p>
+  </section>
+
+  <section class="proyectos">
+    <h2>Mis Proyectos</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Proyecto 1</h3>
+        <p>Descripción breve del proyecto.</p>
+      </div>
+      <div class="card">
+        <h3>Proyecto 2</h3>
+        <p>Descripción breve del proyecto.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contacto">
+    <h2>Contacto</h2>
+    <p>Email: tuemail@gmail.com</p>
+  </section>
+
+  <footer>
+    <p>© 2026 - Tu Nombre</p>
+  </footer>
+
 </body>
 </html>
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+}
+
+.hero {
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+}
